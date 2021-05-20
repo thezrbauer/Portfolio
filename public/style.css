@@ -13,7 +13,7 @@
     margin: 0; 
 }
 /* nav bar*/
-.nav {
+#nav {
     background-color: black;
     color:white;
     width: 100%;
@@ -22,7 +22,7 @@
 
 /* Container positiong */
 .container {
-background-image: url(img/chevron.png);
+background-image: url(img/white_carbon.png);
  gap: 0px;
 }
 
@@ -39,27 +39,37 @@ h1 {
 }
 
 #bio {
-    background-color: rgb(44, 48, 255);
-    height: 400px;
+    background-color: #4C81DC;
+    height: 300px;
     width: 100%;
+    border-top: black solid 2px;
    
 }
 
 
+
 #project {
     background-color: orange;
-    height: 400px;
+    height: 600px;
     width: 100%;
-    
+    border-bottom: black solid 2px;
 }
 
 
 
 #contact {
-    
+   
     height: 400px;
     width: 100%;
     
+}
+
+/* footer */
+
+#return {
+    height: 40px;
+    width: 100%;
+    text-align:center;
 }
 
 
@@ -78,16 +88,20 @@ h1 {
 
 .bio-content {
     text-align: center;
-    padding-top:55px;
+    padding-top:45px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 50px;
 
+}
+
+.bio p {
+    padding-top: 65px;
 }
 
 .project-content {
 text-align: center;
-padding-top:75px;
-      
+padding-top:30px; 
 }   
 
 
@@ -112,24 +126,53 @@ ul {
 
 /*Content style */
 
-a {
+#nav a {
 color: white;
 text-decoration: none;
 padding-right:20px;
 }
 
-a:hover {
+#nav a:hover {
     color:rgb(148, 147, 153);
 }
 
 .hero-name{
     font-style: 'Roboto';
-    
     font-size:42px;
+    color: white;
+    text-shadow: 2px 2px #000000;
 }
 .hero-text{
-    
     font-style: 'Roboto';
-   
     font-size:28px;
+    color: white;
+    text-shadow: 1px 1px #000000;
+}
+
+.bio-content {
+    font-style:"Roboto";
+    color: white;
+    text-shadow: 1px 1px #000000;
+}
+
+
+.project-content h1 {
+font-style: 'Roboto'; 
+font-size: 46px;   
+color: white;     
+text-shadow: 2px 2px #000000;
+}
+
+
+.return-content {
+    font-style: 'Roboto';
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.return-content:hover {
+    font-style: 'Roboto';
+    color: gray;
+    font-size: 20px;
 }
