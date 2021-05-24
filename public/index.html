@@ -7,64 +7,117 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap" rel="stylesheet">
     <title>Portfolio</title>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/07c2cc964d.js" crossorigin="anonymous"></script>
 </head>
-<body class="body">
-    <nav id="nav">
-        <div class="nav-content">
-        <a href="#hero"><ui>Welcome</ui></a>
-        <a href="#bio"><ui>About</ui></a>
-        <a href="#project"><ui>Projects</ui></a>
-        <a href="#contact"><ui>Contacts</ui></a>
-    </div>
-    </nav>
+<nav id="Nav"  class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+       
+ <ul>
+    <li><a href="#hero">Welcome</a></li>
+    <li><a href="#bio">About</a></li>
+    <li><a href="#project">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+ </ul> 
+  </div>
+</nav>
 
+<body class="body">   
     <div class="container">
+        <div id="navbar">
+            <span class="navbar-content" onclick="openNav()"><div class='nav-icon'></div><div id='middle-nav-icon' class='nav-icon' ></div><div  class='nav-icon'></div></span>
+            </div>
         <div id="hero">
-            
             <div class="hero-content">
                 <h1 class="hero-name"> Hi, I'm Zack. </h1>
-                <p class="hero-text">Front-End Developer</p>
+                <p class="hero-text">I design and create Websites</p>
                 <p class="hero-text">Available for Work </p>
             </div>
-
-            
         </div>
 
         <div id="bio">
-           
             <div class="bio-content">
-                <h1> Let me tell you a little about myself</h1>
+                <h1> About Me.</h1>
                 <p>
                     I am early in my career as a self-taught Front-End Developer, having designed and coded several creative projects already. I am passionate about improving my talents and diversifying my aptitudes. Front-End developing gives me the tools I need to bring you the finished product you need  . 
                 </p>
             </div>
-            
         </div>
-        <div id="project">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="#4C81DC" fill-opacity="1" d="M0,64L80,85.3C160,107,320,149,480,165.3C640,181,800,171,960,186.7C1120,203,1280,245,1360,266.7L1440,288L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-              </svg>
-            <div class="project-content">
-               <h1> Projects</h1>
-               <a>Weather app/</a>
-               <a>ZBP/</a>
-               <a>CRUD</a>
-            </div>   
-        </div>
-        <div id="contact">
+
+      
+         <div id="skill">
+            <div id="skill-content">
+                <h1> Skill Table</h1>
+            </div>  
+            <div id="table">
+                <div class="row">
+                   <div class="column" id="Weather_app">
+                       <div class="table-content">
+                       <a><img src="img/Weather_App_snip1.PNG" style="width:100%" alt="description"></img></a>
+                       <h3> Weather_App</h3>
+                       <p>Weather App Project, uses backend topics like Routing, made with Node..</p>
+                </div>
+            </div>
+                   <div class="column" id="CRUD">
+                       <div class="table-content">
+                        <a> <img src="img/ZBP_snip1.PNG"  style="width:100%" alt="description"></img></a>
+                            <h3> Photography Portfolio</h3>
+                            <p> Personal photography portfolio project. subject to major edits</p>
+                   </div>
+                </div>
+                   <div class="column" id="ZBP">
+                        <div class="table-content">
+                            <a> <img src="#" alt="description"></img></a>
+                            <h3> CRUD...TBD</h3>
+                            <p> Next project. Gonna use tailwind maybe</p>
+                       </div>
+                    </div>
+                   
+                </div>
+                </div>
+         </div>
+
+         <div id="center-contact">
+            <div>
+                <i></i>
+                <h1><a>Talk to me</a></h1>
+            </div>
+         </div>
+
+            <div id="project">
+                <div>
+                    <div>
+                        <h1> Projects</h1>
+                    </div>
+                </div>
+            </div>
+         <div id="notes">
+            <h1>Quotes or accolodates or skills</h1>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>      
+         </div>
+
+    
+         <div id="contact">
+
             
             <div class="contact-content">
-               <h1> Contact</h1>
-               
-               <ul>
-                <li>zack.bauer30@gmail.com</li>
-                <li>github</li>
-                <li>insta? twitter?</li>
-            </ul>
+               <h1 id="contact-title">Contact</h1>
+               <div id="icons">
+                <i class="fab fa-github" ><a id="github"></a></i>
+                <i class="fab fa-twitter" ><a id="twitter"></a></i>
+                <i class="fab fa-instagram" ><a id="instagram"></a></i>
+                <i class="fas fa-envelope-square"><a id="envelope"></a></i>
+                </div>
             </div>    
-        </div>
-        <div id="return"><a class="return-content"href="#nav">Back to top</a></div>
+          </div>  
+        <div id="return"><a class="return-content"href="#navbar">Back to top</a></div>
     <footer></footer>
 </div>
 </body>
