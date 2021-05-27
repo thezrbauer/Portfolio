@@ -30,6 +30,8 @@ h1 {
   margin: 0;
   font-style: "Open Sans", "sans-serif";
   color: var(--text);
+  font-size:36px;
+
 }
 
 h3 {
@@ -39,12 +41,19 @@ h3 {
 }
 
 p {
-  font-style: 'Open Sans';
-  font-size:16px;
+  font-style: 'Open Sans', 'sans-serif';
+  
+  font-size:1rem;
   padding: 2px;
   margin: 0;
   color: var(--text);
  
+}
+
+
+
+a {
+  color: inherit;
 }
 
 /* container */
@@ -65,7 +74,7 @@ p {
 }
 .hero-name{
   font-style: 'Open Sans';
-  font-size:42px;
+  font-size:3.5rem;
   font-weight:400;
   color: var(--text);
   text-shadow: 2px 2px #000000;
@@ -73,13 +82,21 @@ p {
 }
 .hero-text{
   font-style: 'Open Sans';
-  font-size:28px;
+  font-size:2.5rem;
   font-weight:300;
   color:  var(--text);
   text-shadow: 2px 2px #000000;
 }
 
+@media screen and (max-width: 600px) {
+  .hero-text {
+     font-size: 2rem;
+   }
+ }
 
+ .red-text {
+   color: var(--quaternary)
+ }
 .hero-content {
   text-align: center;
   padding-top:5.5rem;
@@ -99,35 +116,6 @@ p {
 
 /* Gallery */
 
-#gallery {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  padding-bottom: 5rem;
-  overflow: hidden;
-
-}
-
-
-.portrait {
-  padding: 1.25rem;
- 
-}
-
-.p1 {
- width:100%;
-}
-
-.p2, .p3 {
-width: 50%;
-}
-.myImg {
-  width: 100%;
-  border-radius: 1.5rem;
-}
-
-
 
 /*Bio*/
 #bio {
@@ -143,8 +131,7 @@ width: 50%;
 .bio-content {
   text-align:center;
   width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+
   text-shadow: 1px 1px black;
   
   
@@ -152,19 +139,21 @@ width: 50%;
 
 .bio-content > h1 {
   font-size: 2.875rem;
-
-  
 }
 
 .bio-content > p {
   padding-top: 1.5rem;
   font-size:26px;
- 
+  padding-left: 3.125rem;
+  padding-right: 3.125rem;
 }
 
-#stupid {
-  color: var(--quaternary);
-}
+@media screen and (max-width: 600px) {
+  .bio-content > p {
+     font-size: 1.25rem;
+   }
+ }
+
 
  /*   Project */
 #project {
@@ -245,19 +234,37 @@ width: 50%;
 
 #notes {
 
-  height: auto;
+  height: 100%;
   width:100%;
   text-align:center;
+ 
 }
 
+#notes > h1 {
+  font-size: 2.875rem;
+  padding-top: 5rem;
+}
 
+#notes > p {
+  font-size: 1.25rem;
+  padding-top:1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 6rem;
+}
 
+@media screen and (max-width: 600px) {
+ #notes > p {
+    font-size: 1rem;
+  }
+}
 
 /* Contact */
 #contact {
     height: auto;
     width: 100%;
     padding-bottom: 1.87rem;
+    padding-top: 8rem;
 }
 
 .contact-content {
@@ -273,13 +280,22 @@ width: 50%;
   }
   
   #icons {
-    padding-top:0.625;
-    padding-bottom: 1.875rem;
+    padding-top:2rem;
+    padding-bottom: 4rem;
+   
     color:var(--text);
     font-size:1.5rem;
     text-shadow: 2px 2px black;
   }
-      
+
+  #github:hover {
+    font-size: 2rem;
+  }
+ 
+
+ #email:hover {
+   font-size: 2rem;
+ }
 
 .return-content {
     font-style: 'Roboto';
@@ -297,14 +313,15 @@ width: 50%;
 /* footer */
 
 #return {
-    height: 8rem;
+    height: 6rem;
     width: 100%;
     text-align:center;
+    padding-top:3rem;
     
 }
 
 .fa-arrow-up {
-  color:var(--text);
+  color:var(--tertiary);
   text-shadow: 2px 2px black;
   font-size: 2rem;
 }
