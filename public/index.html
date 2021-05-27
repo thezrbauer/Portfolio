@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Farro:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet"> 
+   
     <title>Portfolio</title>
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/07c2cc964d.js" crossorigin="anonymous"></script>
@@ -20,7 +18,7 @@
     <div class="overlay-content">
        
  <ul>
-    <li><a href="#hero">Welcome</a></li>
+    <li><a href="#hero">Resume</a></li>
     <li><a href="#bio">About</a></li>
     <li><a href="#project">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -29,93 +27,89 @@
 </nav>
 
 <body class="body">   
-    <div class="container">
+    
         <div id="navbar">
             <span class="navbar-content" onclick="openNav()"><div class='nav-icon'></div><div id='middle-nav-icon' class='nav-icon' ></div><div  class='nav-icon'></div></span>
           
         </div>
 
         <div id="hero">
-            <img id="name-logo" src="img/zacklogo.png"></img> 
+            <img id="name-logo" src="img/zacklogo3.png"></img> 
             <div class="hero-content">
-                <h1 class="hero-name"> Hi, I'm Zack. </h1>
-                <p class="hero-text">Front-End Designer and Developer.</p>
-                <p class="hero-text">Available for Work.</p>
+                <h1 class="hero-name">Zack Bauer. </h1>
+                <p class="hero-text">Upcoming Front-End Developer, Designer.</p>
+                <p class="hero-text">Looking for projects.</p>
             </div>
-            
         </div>
 
+        <div id="gallery">
+            <div class="portrait p1"><img class="myImg img1" src="/public/img/mouse_and_keyboard.jpg" alt="text"></img></div>
+            <div class="portrait p2"><img class="myImg img2" src="/public/img/mouse_and_keyboard.jpg"  alt="text"></img></div>
+            <div class="portrait p3"><img class="myImg img3" src="/public/img/mouse_and_keyboard.jpg"  alt="text"></img></div>
+            </div>
+                
+           
+    <div class="container">
         <div id="bio">
             <div class="bio-content">
-                <h1> About Me.</h1>
+                <h1> <span id="stupid">W</span>hat i'm about.</h1>
                 <p>
-                    I am early in my career as a self-taught Front-End Developer, having designed and coded several creative projects already. I am passionate about improving my talents and diversifying my aptitudes. Front-End developing gives me the tools I need to bring you the finished product you need  . 
+                    I’m a web designer, with a passion for bringing new ideas to life. From doodling in my journal to the finished product in code, I make websites feel modern and unique. Every day, I learn something new and find another exciting outlet for my creativity. Web design gives me the tools I need, to bring you the finished product you deserve.  
                 </p>
             </div>
         </div>
 
-      
-         <div id="skill">
-            <div id="skill-content">
-                <h1> Skill Table</h1>
-            </div>  
-        
-                   
-             </div>
-        
-         
+        <div id="project">
+            <h1 class="project-title"> See what i've made.</h1>
+             <div class="card-box">
 
-         <div id="center-contact">
-            <div>
-                <i></i>
-                <h1><a>Talk to me</a></h1>
-            </div>
-         </div>
+                <div class='card card-1'> 
+                  <div class='card-container'>
+                    <h3 class='card-title'>Weather App</h3>
+                    <p class='card-text'>Created to learn how Node Express can be used to route Api data from one location to the next.</p>
+                    <button class="card-btn">Check out the Code</button>
+                 </div>
+              </div>
+                <div class='card card-2'> 
+                 <div class='card-container'>
+                   <h3 class='card-title'>Photography Portfolio</h3>
+                   <p class='card-text'>One of the first websites I made. I wanted to incorporate my passion for photography and my skills in programming, I intend on making some adjustments to it momentarily.</p>
+                   <button class="card-btn">Get a load of this</button>
+                 </div>
+                </div>
+               <div class='card card-3'> 
+                <div class='card-container'>
+                 <h3 class='card-title'>Weather App</h3>
+                 <p class='card-text'>Created to learn how Node Express can be used to route Api data from one location to the next.</p>
+                 <button class="card-btn"> Click me idiot</button>
+                </div>
+               </div>
+             <div class='card card-4'>
+                 <div class='card-container'>
+                        <h3 class='card-title'>Weather App</h3>
+                        <p class='card-text'>Created to learn how Node Express can be used to route Api data from one location to the next.</p>
+                        <button class="card-btn">Click for good time</button>
+                   </div>
+                </div>
 
-            <div id="project">
-                        <h1 class="project-title"> Projects</h1>
-                        <div class="card-box">
-                        <div class='card card-1'> 
-                            <img class="card-img" src="img/Weather_App_snip1.PNG" style="width:150px; height:150px;" alt="description"></img>
-                            <div class='card-container'>
-                                <h3 class='card-title'>Weather App</h3>
-                                <p class='card-text'>Created to learn how Node Express can be used to route Api data from one location to the next.</p>
-                            </div></div>
-                        <div class='card card-2'> 
-                            <img src="img/ZBP_snip1.PNG"  style="width:150px; height:150px;" alt="description"></img>
-                            <div class='card-container'>
-                                <h3 class='card-title'>Photography Portfolio</h3>
-                                <p class='card-text'>One of the first websites I made. I wanted to incorporate my passion for photography and my skills in programming, I intend on making some adjustments to it momentarily.</p>
-                            </div></div>
-                        <div class='card card-3'> <img src="img/Weather_App_snip1.PNG" style="width:150px; height:150px;" alt="description"></img>
-                            <div class='card-container'>
-                                <h3 class='card-title'>Weather App</h3>
-                                <p class='card-text'>Created to learn how Node Express can be used to route Api data from one location to the next.</p>
-                            </div></div>
-                        <div class='card card-4'>
-                            <img src="img/ZBP_snip1.PNG"  style="width:150px; height:150px;" alt="description"></img>
-                            <div class='card-container'>
-                                <h3 class='card-title'>Weather App</h3>
-                                <p class='card-text'>Created to learn how Node Express can be used to route Api data from one location to the next.</p>
-                            </div></div>
-                        </div>
             </div>
+       </div>
         
 
          <div id="notes">
-            <h1>Quotes or accolodates or skills</h1>
+            <h1>There's more to it.
+            </h1>
             <div>1</div>
-            <div>2</div>
-            <div>3</div>
+          
         </div>      
          
 
-    
+    </div>
          <div id="contact">
 
             
             <div class="contact-content">
-               <h1 id="contact-title">Contact</h1>
+               <h1 id="contact-title">Lets chat.</h1>
                <div id="icons">
                 <i class="fab fa-github" ><a id="github"></a></i>
                 <i class="fab fa-twitter" ><a id="twitter"></a></i>
@@ -124,30 +118,9 @@
                 </div>
             </div>    
           </div>  
-        <div id="return"><a class="return-content"href="#navbar">Back to top</a></div>
+        <div id="return"><a class="return-content"href="#navbar"><i class="fas fa-arrow-up"></i></a></div>
     <footer></footer>
-</div>
+
 </body>
 </html>  
 
-     <!-- <img></img>
-                            <div class='card-container'>
-                                <h3>Weather App</h3>
-                                <p>Created to learn how Node Express can be used to route Api data from one location to the next.</p>
-                            </div>
-                        </div>
-                        <div class='card'>
-                            <img></img>
-                            <div class='card-container'>
-                                <h3>Photography Portfolio</h3>
-                                <p>One of the first websites I made. I wanted to incorporate my passion for photography and my skills in programming, I intend on making some adjustments to it momentarily.</p>
-                            </div>
-                        </div>
-                        <div class='card'>
-                            <img></img>
-                            <div class='card-container'>
-                                <h3>Weather App</h3>
-                                <p>Created to learn how Node Express can be used to route Api data from one location to the next.</p>
-                            </div>
-                        </div>
-                        -->

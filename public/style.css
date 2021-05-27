@@ -7,35 +7,33 @@
 }
 
 
-.body {
-    padding: 0;
-    margin: 0; 
-    background-color: var(--secondary);
-}
-
-
 :root {
-  --primary:#0649C7;
-  --secondary:#068BD1;
-  --tertiary: #00B2B8;
-  --quaternary: #0ACF94;
-  --quinary: #10C753;
-  --text: white;
+  --primary:#0a0a0aff;
+  --secondary:#1a181aff;
+  --tertiary: #505050ff;
+  --quaternary: #d1342fff;;
+  --quinary: #434038ff;;
+  --text:  #eee3c1ff;;
 }
 
-.container {
- gap: 0px;
+
+.body {
+   padding: 0;
+   margin: 0; 
+   background-color: var(--secondary);
+
 }
+
+
 
 h1 {
-    margin: 0;
-    font-style: "Open Sans", "sans-serif";
-    color: var(--text);
+  margin: 0;
+  font-style: "Open Sans", "sans-serif";
+  color: var(--text);
 }
 
 h3 {
   margin: 0;
-  padding: 2px;
   text-align:center;
 
 }
@@ -43,29 +41,32 @@ h3 {
 p {
   font-style: 'Open Sans';
   font-size:16px;
-  color: white;
-  text-align:center;
   padding: 2px;
-
+  margin: 0;
+  color: var(--text);
+ 
 }
 
-img {
-  border: 1px black solid;
+/* container */
+.container {
+
+  background-color: var(--primary);
 }
+
 /*hero   */
 
 #hero {
-  background-color: var(--primary);
+ 
   font-family: 'Open Sans', sans-serif;
   height: 500px;
   width: 100%;
-  border-bottom-right-radius: 120px;
-  border-bottom-left-radius: 120px;
+
     
 }
 .hero-name{
   font-style: 'Open Sans';
   font-size:42px;
+  font-weight:400;
   color: var(--text);
   text-shadow: 2px 2px #000000;
   padding-top:100px;
@@ -73,6 +74,7 @@ img {
 .hero-text{
   font-style: 'Open Sans';
   font-size:28px;
+  font-weight:300;
   color:  var(--text);
   text-shadow: 2px 2px #000000;
 }
@@ -80,7 +82,7 @@ img {
 
 .hero-content {
   text-align: center;
-  padding-top:75px;
+  padding-top:5.5rem;
  
  }
 
@@ -88,47 +90,80 @@ img {
   border: none;
   float: left;
   position: absolute;
-  height: 130px;
-  width: 130px;
+  height: 8.125rem;
+  width: 8.125rem;
+  margin-left: 2.5rem;
 }
 
+
+
+/* Gallery */
+
+#gallery {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  padding-bottom: 5rem;
+  overflow: hidden;
+
+}
+
+
+.portrait {
+  padding: 1.25rem;
+ 
+}
+
+.p1 {
+ width:100%;
+}
+
+.p2, .p3 {
+width: 50%;
+}
+.myImg {
+  width: 100%;
+  border-radius: 1.5rem;
+}
+
+
+
+/*Bio*/
 #bio {
-  background-color: var(--secondary);
-    height: 500px;
-    width: 100%;
-    /* border-top-right-radius: 40px;
-    border-top-left-radius: 40px;
-   */
-}
-
-
-#skill {
-    background-color: var(--primary);
-    height: 600px;
-    width: 100%;
-    
-}
-
-
-#table {
+ 
+  height: 100%;
+  width: 100%;
+  padding-top:6rem;
+  padding-bottom: 6rem;
   
-  height:400px;
-  width: 90%;
-  margin-top: 100px;
-  margin-bottom:80px;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 15px;
-  background-color:white;
-  
-  position: relative;
 }
 
 
-#center-contact {
-  height:400px;
-  width:100%;
-  background-color: var(--tertiary);;
+.bio-content {
+  text-align:center;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-shadow: 1px 1px black;
+  
+  
+}
+
+.bio-content > h1 {
+  font-size: 2.875rem;
+
+  
+}
+
+.bio-content > p {
+  padding-top: 1.5rem;
+  font-size:26px;
+ 
+}
+
+#stupid {
+  color: var(--quaternary);
 }
 
  /*   Project */
@@ -144,182 +179,104 @@ img {
   text-align:center;
   grid-template-columns: 1fr;
   padding-top: 50px;
+  font-size: 2.875rem;
+  text-shadow: 1px 1px black;
 }
 
 .card-box {
   display: grid;
-  background-color: var(--primary);
+  
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 1rem;
-  padding: 40px;
-  
+  padding: 2.5rem;
+
 }
 
 .card {
   display:grid;
-  background-color: var(--secondary);
-  border: 1px solid var( --quaternary);
-  grid-template-areas: "img img title title"
-                        "img img content content"
-                        "img img content content";
-
+  background-color: var(--quinary);  
+  padding: 10px;
+  padding-top:30px;
+  box-shadow: 2px 2px 2px rgba(0,0,0, 0.9);
+  border-radius: 15px;
+  padding-bottom: 20px;
 }
 
 
-.card-img {
-  grid-area: img;
 
-}
 
 .card-title {
-  grid-area: title;
-
+  color:var(--text);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px black;
 }
 
 .card-text {
-  grid-area: content;
+  text-align:center;
+  padding: 0.3rem;
+  height: 9rem;
+  padding-top:.6rem;
+  text-shadow: 1px 1px black;
+ 
+}
+
+.card-btn {
+
+  height: auto;
+  margin: 0;
+  border-radius: .2rem;
+  border: black;
+  width: 100%;
+  background-color:var(--quaternary);
+  font-size: 12px;
+  box-shadow:2px 2.5px rgba(0,0,0, 0.3);
+
+  
+}
+
+.card-btn:hover {
+ font-size: 16px;
 }
 
 
-.card-1 {}
-.card-2 {}
-.card-3 {}
-.card-4 {}
+
+
+ /* notes */
 
 #notes {
-  background-color:var(--secondary);
-  height: 600px;
+
+  height: auto;
   width:100%;
-  padding-top:300px;
   text-align:center;
-
 }
 
+
+
+
+/* Contact */
 #contact {
-    height: 200px;
+    height: auto;
     width: 100%;
-    background-color:var(--primary)
-}
-
-/* footer */
-
-#return {
-    height: 40px;
-    width: 100%;
-    text-align:center;
-}
-
-
-
-/* Content positiong  */
-
-
-.navbar-content {
-    font-size: 18px;
-    float:right;
-    padding-right:30px;
-    padding-top:15px;
-    
-}
-
-
-
-
-.bio-content {
-   
-    text-align: center;
-    padding-top:45px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom:30px;
-    overflow: hidden;
-}
-
-#bio p {
-   font-size: 16px;
-    
-}
-
-#skill-content {
-text-align: center;
-padding-top:30px; 
-}   
-
-
-.column {
-  
-  background-color: whitesmoke;
- 
-}
-
-.row {
-  display:grid;
-  grid-template-columns: 30% 30% 30%;
-  justify-content: center;
-
-  gap: 10px;
- 
+    padding-bottom: 1.87rem;
 }
 
 .contact-content {
-text-align: center;
-}   
-
-
-
-#nav ul li {
-  list-style-type:none;
-  display:flex; 
-}
-ul {
-margin: 0;
-padding: 0;
-overflow: hidden;
-}
-
-/*Content style */
-
-.nav-icon {
-    width: 30px;
-    height: 3.5px;
-    background-color: black;
-    margin: 4px 0;
-  }
-
-  #middle-nav-icon {
-      color:gray;
-  }
-
-
-
-
-.bio-content {
-    font-style:"Roboto";
-    color: white;
-    text-shadow: 1px 1px #000000;
-}
-
-
-#skill-content h1 {
-font-style: 'Roboto'; 
-font-size: 46px;   
-color: white;     
-text-shadow: 2px 2px #000000;
-}
-
-
+  text-align: center;
+  }   
+  
+  
 #contact-title {
   font-style:"Roboto";
-  font-size: 52px;
-  color:white;
-  padding-top:15px;
+  font-size: 2.875rem;
+  padding-top:.938rem;
   text-shadow: 2px 2px black;
   }
   
   #icons {
-    padding-top:35px;
-    color:white;
-    font-size:32px;
+    padding-top:0.625;
+    padding-bottom: 1.875rem;
+    color:var(--text);
+    font-size:1.5rem;
     text-shadow: 2px 2px black;
   }
       
@@ -336,6 +293,60 @@ text-shadow: 2px 2px #000000;
     color: gray;
     font-size: 20px;
 }
+
+/* footer */
+
+#return {
+    height: 8rem;
+    width: 100%;
+    text-align:center;
+    
+}
+
+.fa-arrow-up {
+  color:var(--text);
+  text-shadow: 2px 2px black;
+  font-size: 2rem;
+}
+
+
+.fa-arrow-up:hover {
+  font-size:2.5rem;
+}
+
+
+/* Content positiong  */
+
+
+.navbar-content {
+    font-size: 18px;
+    float:right;
+    padding-right:50px;
+    padding-top:45px;
+    
+}
+
+
+
+
+#nav ul li {
+  list-style-type:none;
+  display:flex; 
+}
+ul {
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+/*Content style */
+
+.nav-icon {
+    width: 1.875rem;
+    height: 0.223rem;
+    background-color: var(--tertiary);
+    margin: 4px 0;
+  }
 
 
 
@@ -401,65 +412,5 @@ text-shadow: 2px 2px #000000;
   
 
 
-  /* Media queries Plan to revise this*/
 
-  @media screen and (min-width:200px) { 
-    #table {
-      width: 80%;
-      margin-top: 50px;
-      height:400px; 
-    }
-      #notes {
-        height:400px;
-       padding-top: 100px;
-    }
-  }
-
-
-
-
-
-
-
-  @media screen and (min-width:900px) {
-    
-
-      #bio p {
-        font-size: 22px;
-        
-     }
-
-     #skill {
-       height: 600px;
-     }
-
-     #table {
-       width: 80%;
-       margin-top: 50px;
-       
-     }
-
-     #contact {
-       height: 200px;
-     }
-
-  }
-
-  @media screen and (min-width:1200px) { 
-
-
-    .row {
-  
-     }
-
-     #table {
-      height:550px; 
-   
-    }
-
-
-    #notes {
-      
-     
-    }
-  }
+ 
